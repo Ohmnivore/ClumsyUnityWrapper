@@ -1,0 +1,103 @@
+<engine:UXML xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements">
+    <engine:VisualElement class="clumsy-container">
+
+        <engine:TextField name="filter" label="Filter:" binding-path="Filter" class="clumsy-filter" />
+
+        <engine:VisualElement name="autostart" class="clumsy-module">
+            <engine:Toggle binding-path="AutoStart" class="clumsy-module-toggle" />
+            <engine:Label text="Auto Start" />
+        </engine:VisualElement>
+
+        <engine:VisualElement class="clumsy-module">
+            <engine:Toggle binding-path="Lag.Enabled" class="clumsy-module-toggle" />
+            <engine:Label text="Lag" />
+            <engine:VisualElement class="clumsy-module-spacer" />
+            <engine:Toggle binding-path="Lag.Inbound" class="clumsy-module-toggle" />
+            <engine:Label text="Inbound" />
+            <engine:Toggle binding-path="Lag.Outbound" class="clumsy-module-toggle clumsy-module-margin-left" />
+            <engine:Label text="Outbound" />
+            <editor:IntegerField label=" Delay(ms):" binding-path="Lag.DelayMS" class="clumsy-module-field clumsy-module-margin-left" />
+        </engine:VisualElement>
+
+        <engine:VisualElement class="clumsy-module">
+            <engine:Toggle binding-path="Drop.Enabled" class="clumsy-module-toggle" />
+            <engine:Label text="Drop" />
+            <engine:VisualElement class="clumsy-module-spacer" />
+            <engine:Toggle binding-path="Drop.Inbound" class="clumsy-module-toggle" />
+            <engine:Label text="Inbound" />
+            <engine:Toggle binding-path="Drop.Outbound" class="clumsy-module-toggle clumsy-module-margin-left" />
+            <engine:Label text="Outbound" />
+            <editor:FloatField label="Chance(%):" binding-path="Drop.ChancePercentage" class="clumsy-module-field clumsy-module-margin-left" />
+        </engine:VisualElement>
+
+        <engine:VisualElement class="clumsy-module">
+            <engine:Toggle binding-path="Throttle.Enabled" class="clumsy-module-toggle" />
+            <engine:Label text="Throttle" />
+            <engine:VisualElement class="clumsy-module-spacer" />
+            <editor:IntegerField label="Timeframe(ms):" binding-path="Throttle.TimeframeMS" class="clumsy-module-field" />
+            <engine:Toggle binding-path="Throttle.Inbound" class="clumsy-module-toggle clumsy-module-margin-left" />
+            <engine:Label text="Inbound" />
+            <engine:Toggle binding-path="Throttle.Outbound" class="clumsy-module-toggle clumsy-module-margin-left" />
+            <engine:Label text="Outbound" />
+            <editor:FloatField label="Chance(%):" binding-path="Throttle.ChancePercentage" class="clumsy-module-field clumsy-module-margin-left" />
+        </engine:VisualElement>
+
+        <engine:VisualElement class="clumsy-module">
+            <engine:Toggle binding-path="Duplicate.Enabled" class="clumsy-module-toggle" />
+            <engine:Label text="Duplicate" />
+            <engine:VisualElement class="clumsy-module-spacer" />
+            <editor:IntegerField label="Count:" binding-path="Duplicate.Count" class="clumsy-module-field" />
+            <engine:Toggle binding-path="Duplicate.Inbound" class="clumsy-module-toggle clumsy-module-margin-left" />
+            <engine:Label text="Inbound" />
+            <engine:Toggle binding-path="Duplicate.Outbound" class="clumsy-module-toggle clumsy-module-margin-left" />
+            <engine:Label text="Outbound" />
+            <editor:FloatField label="Chance(%):" binding-path="Duplicate.ChancePercentage" class="clumsy-module-field clumsy-module-margin-left" />
+        </engine:VisualElement>
+
+        <engine:VisualElement class="clumsy-module">
+            <engine:Toggle binding-path="OutOfOrder.Enabled" class="clumsy-module-toggle" />
+            <engine:Label text="Out of order" />
+            <engine:VisualElement class="clumsy-module-spacer" />
+            <engine:Toggle binding-path="OutOfOrder.Inbound" class="clumsy-module-toggle" />
+            <engine:Label text="Inbound" />
+            <engine:Toggle binding-path="OutOfOrder.Outbound" class="clumsy-module-toggle clumsy-module-margin-left" />
+            <engine:Label text="Outbound" />
+            <editor:FloatField label="Chance(%):" binding-path="OutOfOrder.ChancePercentage" class="clumsy-module-field clumsy-module-margin-left" />
+        </engine:VisualElement>
+
+        <engine:VisualElement class="clumsy-module">
+            <engine:Toggle binding-path="Tamper.Enabled" class="clumsy-module-toggle" />
+            <engine:Label text="Tamper" />
+            <engine:VisualElement class="clumsy-module-spacer" />
+            <engine:Toggle label="Redo Checksum:" binding-path="Tamper.RedoChecksum" class="clumsy-module-field" />
+            <engine:Toggle binding-path="Tamper.Inbound" class="clumsy-module-toggle clumsy-module-margin-left" />
+            <engine:Label text="Inbound" />
+            <engine:Toggle binding-path="Tamper.Outbound" class="clumsy-module-toggle clumsy-module-margin-left" />
+            <engine:Label text="Outbound" />
+            <editor:FloatField label="Chance(%):" binding-path="Tamper.ChancePercentage" class="clumsy-module-field clumsy-module-margin-left" />
+        </engine:VisualElement>
+
+        <engine:VisualElement class="clumsy-module">
+            <engine:Toggle binding-path="TCPReset.Enabled" class="clumsy-module-toggle" />
+            <engine:Label text="Set TCP RST" />
+            <engine:VisualElement class="clumsy-module-spacer" />
+            <engine:Toggle binding-path="TCPReset.Inbound" class="clumsy-module-toggle" />
+            <engine:Label text="Inbound" />
+            <engine:Toggle binding-path="TCPReset.Outbound" class="clumsy-module-toggle clumsy-module-margin-left" />
+            <engine:Label text="Outbound" />
+            <editor:FloatField label="Chance(%):" binding-path="TCPReset.ChancePercentage" class="clumsy-module-field clumsy-module-margin-left" />
+        </engine:VisualElement>
+
+        <engine:VisualElement class="clumsy-module">
+            <engine:Toggle binding-path="Bandwidth.Enabled" class="clumsy-module-toggle" />
+            <engine:Label text="Bandwidth" />
+            <engine:VisualElement class="clumsy-module-spacer" />
+            <engine:Toggle binding-path="Bandwidth.Inbound" class="clumsy-module-toggle" />
+            <engine:Label text="Inbound" />
+            <engine:Toggle binding-path="Bandwidth.Outbound" class="clumsy-module-toggle clumsy-module-margin-left" />
+            <engine:Label text="Outbound" />
+            <editor:IntegerField label="Limit(KB/s):" binding-path="Bandwidth.LimitKBPerSecond" class="clumsy-module-field clumsy-module-margin-left" />
+        </engine:VisualElement>
+
+    </engine:VisualElement>
+</engine:UXML>

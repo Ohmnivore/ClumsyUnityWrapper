@@ -1,0 +1,10 @@
+<engine:UXML xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements">
+    <engine:Label text="Clumsy" style="font-size: 20px; -unity-font-style: bold; margin: 4px 4px;" />
+
+    <editor:PropertyField binding-path="m_CustomInstallationDirectory" />
+    <editor:PropertyField binding-path="m_WindowStyle" />
+
+    <engine:VisualElement style="margin: 4px 0px;" />
+
+    <engine:Button name="reset-button" text="Reset To Defaults" />
+</engine:UXML>

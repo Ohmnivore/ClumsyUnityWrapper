@@ -1,0 +1,15 @@
+<engine:UXML xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements">
+    <editor:Toolbar>
+        <editor:ToolbarToggle name="enabled" text="Enabled" tooltip="Whether Clumsy should run when entering Play mode" />
+        <Clumsy.Editor.ToolbarMenuExt name="configuration" text="Pick Configuration..." tooltip="The Clumsy configuration to edit and to use in Play mode" />
+        <editor:ToolbarSpacer class="clumsy-toolbar-spacer" />
+        <editor:ToolbarButton name="settings" class="clumsy-settings-button" tooltip="Clumsy preferences">
+            <engine:VisualElement class="clumsy-settings-button-icon" />
+        </editor:ToolbarButton>
+    </editor:Toolbar>
+
+    <engine:VisualElement class="clumsy-margin">
+        <engine:Label name="status" class="clumsy-status unity-base-field" />
+        <engine:ScrollView name="configuration-editor-container" class="clumsy-configuration-editor-container" />
+    </engine:VisualElement>
+</engine:UXML>

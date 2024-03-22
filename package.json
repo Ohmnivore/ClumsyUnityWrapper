@@ -1,0 +1,17 @@
+{
+  "name": "com.ohmnivore.clumsyunitywrapper",
+  "author": "Ohmnivore",
+  "description": "Configuration window for Clumsy and Play mode launch/shutdown",
+  "version": "1.0.0",
+  "unity": "2021.3",
+  "displayName": "Clumsy Unity Wrapper",
+  "license": "MIT",
+  "keywords": [
+    "Clumsy",
+    "Network",
+    "Networking",
+    "Netcode",
+    "Lag"
+  ],
+  "dependencies": {}
+}

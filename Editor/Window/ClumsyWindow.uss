@@ -1,0 +1,36 @@
+.clumsy-margin
+{
+    margin: 4px 0px;
+}
+
+.clumsy-toolbar-spacer
+{
+    flex-grow: 1;
+}
+
+.clumsy-settings-button
+{
+    margin-right: 0;
+    border-right-width: 0;
+}
+
+.clumsy-settings-button-icon
+{
+    align-self: center;
+    background-image: resource("d_SettingsIcon");
+    font-size: 12px;
+    height: 16px;
+    width: 16px;
+    min-width: 16px;
+}
+
+.clumsy-status
+{
+    -unity-font-style: bold;
+}
+
+.clumsy-configuration-editor-container
+{
+    margin: 0px 2px;
+    padding-top: 4px;
+}

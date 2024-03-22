@@ -1,0 +1,47 @@
+.clumsy-container
+{
+    max-width: 680px;
+    min-width: 560px;
+}
+
+.clumsy-filter Label
+{
+    min-width: 0;
+}
+
+.clumsy-filter .unity-base-field__input
+{
+    flex-shrink: 1;
+}
+
+.clumsy-module
+{
+    flex-direction: row;
+    align-items: center;
+}
+
+.clumsy-module-margin-left
+{
+    margin-left: 16px;
+}
+
+.clumsy-module-toggle
+{
+    margin-right: 4px;
+}
+
+.clumsy-module-spacer
+{
+    flex-grow: 1;
+}
+
+.clumsy-module-field .unity-base-field__input
+{
+    min-width: 48px;
+}
+
+.clumsy-module-field Label
+{
+    min-width: 0;
+    color: #D2D2D2;
+}
